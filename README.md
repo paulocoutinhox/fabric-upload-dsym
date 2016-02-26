@@ -8,6 +8,18 @@ This is a simple command line tool made with Go that upload any DSYM to *Fabric.
 fabric-upload-dsym --bundleid=[YOUR-APP-BUNDLE] --fabricapikey=[YOUR-FABRIC-API-KEY] --file=[ZIPPED-DSYM-FILE]
 ```
 
+# Build and install
+
+```
+go install
+```
+
+# Help
+
+```
+fabric-upload-dsym -help
+```
+
 # Dependencies to build
 
 ```

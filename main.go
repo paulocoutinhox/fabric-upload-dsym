@@ -68,7 +68,7 @@ func main() {
 	flag.Parse()
 
 	if *appBundleId == "" {
-		log.Fatal("he App Bundle ID is not defined")
+		log.Fatal("The App Bundle ID is not defined")
 	}
 
 	if *fabricApiKey == "" {
