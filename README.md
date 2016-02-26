@@ -8,9 +8,10 @@ This is a simple command line tool made with Go that upload any DSYM to *Fabric.
 fabric-upload-dsym --bundleid=[YOUR-APP-BUNDLE] --fabricapikey=[YOUR-FABRIC-API-KEY] --file=[ZIPPED-DSYM-FILE]
 ```
 
-# Get, build and install
+# Build and install
 
 ```
+go get github.com/PuerkitoBio/goquery
 go get github.com/prsolucoes/fabric-upload-dsym
 go install github.com/prsolucoes/fabric-upload-dsym
 ```
