@@ -11,6 +11,7 @@ fabric-upload-dsym --bundleid=[YOUR-APP-BUNDLE] --fabricapikey=[YOUR-FABRIC-API-
 # Get, build and install
 
 ```
+go get github.com/prsolucoes/fabric-upload-dsym
 go install github.com/prsolucoes/fabric-upload-dsym
 ```
 
