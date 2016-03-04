@@ -1,3 +1,6 @@
+# Support with donation
+[![Support with donation](http://donation.pcoutinho.com/images/donate-button.png)](http://donation.pcoutinho.com/)
+
 # Fabric Upload DSYM Tool
 
 This is a simple command line tool made with Go that upload any DSYM to *Fabric.io*
