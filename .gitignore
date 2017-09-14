@@ -2,3 +2,5 @@
 *.iml
 .idea
 /fabric-upload-dsym
+.vscode
+Thumbs.db

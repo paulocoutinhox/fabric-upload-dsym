@@ -1,18 +1,18 @@
 package main
 
 import (
-	"net/http"
-	"net/http/cookiejar"
-	"log"
-	"os"
+	"bytes"
+	"encoding/json"
+	"flag"
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
-	"bytes"
-	"mime/multipart"
 	"io"
-	"encoding/json"
+	"log"
+	"mime/multipart"
+	"net/http"
+	"net/http/cookiejar"
+	"os"
 	"path/filepath"
-	"flag"
 )
 
 type FabricConfigData struct {
@@ -95,7 +95,7 @@ func main() {
 
 	response, responseError = client.Get("https://fabric.io/login")
 
-	if (responseError != nil) {
+	if responseError != nil {
 		debugFatal(fmt.Sprintf("Error: %v", responseError))
 	}
 
@@ -110,7 +110,7 @@ func main() {
 	doc.Find("meta[name=csrf-token]").Each(func(i int, s *goquery.Selection) {
 		val, exists := s.Attr("content")
 
-		if (exists) {
+		if exists {
 			fabricCsrfToken = val
 		}
 	})
@@ -131,7 +131,7 @@ func main() {
 
 	resp, err := client.Do(reqDT)
 
-	if (err != nil) {
+	if err != nil {
 		debugFatal(fmt.Sprintf("Error: %v", responseError))
 	}
 
@@ -155,7 +155,7 @@ func main() {
 
 	extraParams := map[string]string{
 		"project[identifier]": *appBundleId,
-		"code_mapping[type]": "dsym",
+		"code_mapping[type]":  "dsym",
 	}
 
 	requestU, err := newfileUploadRequest("https://cm.crashlytics.com/api/v3/platforms/ios/code_mappings", extraParams, "code_mapping[file]", *fileName)

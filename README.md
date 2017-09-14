@@ -1,6 +1,3 @@
-# Support with donation
-[![Support with donation](http://donation.pcoutinho.com/images/donate-button.png)](http://donation.pcoutinho.com/)
-
 # Fabric Upload DSYM Tool
 
 This is a simple command line tool made with Go that upload any DSYM to *Fabric.io*
@@ -11,13 +8,21 @@ This is a simple command line tool made with Go that upload any DSYM to *Fabric.
 fabric-upload-dsym --bundleid=[YOUR-APP-BUNDLE] --fabricapikey=[YOUR-FABRIC-API-KEY] --file=[ZIPPED-DSYM-FILE]
 ```
 
+# Prebuilt
+
+You can find all prebuilt files by OS in "build" folder. With this file you dont need compile.
+
 # Build and install
 
 ```
-go get github.com/PuerkitoBio/goquery
-go get github.com/prsolucoes/fabric-upload-dsym
-go install github.com/prsolucoes/fabric-upload-dsym
+make deps
+make install
 ```
+
+# Available commands
+
+To see all available commands on Makefile, type:
+> make  
 
 # Help
 
@@ -25,8 +30,5 @@ go install github.com/prsolucoes/fabric-upload-dsym
 fabric-upload-dsym -help
 ```
 
-# Dependencies to build
-
-```
-go get github.com/PuerkitoBio/goquery
-```
+# Support with donation
+[![Support with donation](http://donation.pcoutinho.com/images/donate-button.png)](http://donation.pcoutinho.com/)
