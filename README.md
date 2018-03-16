@@ -1,4 +1,4 @@
-# Fabric Upload DSYM Tool
+# Crashlytics from Fabric upload DSYM tool
 
 This is a simple command line tool made with Go that upload any DSYM to **Crashlytics** from **Fabric.io**
 
