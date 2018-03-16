@@ -2,7 +2,7 @@ PROJECT=fabric-upload-dsym
 LOG_FILE=/var/log/${PROJECT}.log
 GOFMT=gofmt -w
 GODEPS=go get -u
-PACKAGE=github.com/prsolucoes/gohc
+PACKAGE=github.com/prsolucoes/fabric-upload-dsym
 
 .DEFAULT_GOAL := help
 
