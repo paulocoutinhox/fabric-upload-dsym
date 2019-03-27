@@ -41,19 +41,19 @@ update:
 	make install
 
 build-all:
-	rm -rf build
+	rm -rf dist
 
-	mkdir -p build/linux32
-	env GOOS=linux GOARCH=386 go build -o build/linux32/${PROJECT} -v ${PACKAGE}
+	mkdir -p dist/linux32
+	env GOOS=linux GOARCH=386 go build -o dist/linux32/${PROJECT} -v ${PACKAGE}
 
-	mkdir -p build/linux64
-	env GOOS=linux GOARCH=amd64 go build -o build/linux64/${PROJECT} -v ${PACKAGE}
+	mkdir -p dist/linux64
+	env GOOS=linux GOARCH=amd64 go build -o dist/linux64/${PROJECT} -v ${PACKAGE}
 
-	mkdir -p build/darwin64
-	env GOOS=darwin GOARCH=amd64 go build -o build/darwin64/${PROJECT} -v ${PACKAGE}
+	mkdir -p dist/darwin64
+	env GOOS=darwin GOARCH=amd64 go build -o dist/darwin64/${PROJECT} -v ${PACKAGE}
 
-	mkdir -p build/windows32
-	env GOOS=windows GOARCH=386 go build -o build/windows32/${PROJECT}.exe -v ${PACKAGE}
+	mkdir -p dist/windows32
+	env GOOS=windows GOARCH=386 go build -o dist/windows32/${PROJECT}.exe -v ${PACKAGE}
 
-	mkdir -p build/windows64
-	env GOOS=windows GOARCH=amd64 go build -o build/windows64/${PROJECT}.exe -v ${PACKAGE}
+	mkdir -p dist/windows64
+	env GOOS=windows GOARCH=amd64 go build -o dist/windows64/${PROJECT}.exe -v ${PACKAGE}

@@ -5,12 +5,12 @@ This is a simple command line tool made with Go that upload any DSYM to **Crashl
 # Usage
 
 ```
-fabric-upload-dsym --bundleid=[YOUR-APP-BUNDLE] --fabricapikey=[YOUR-FABRIC-API-KEY] --file=[ZIPPED-DSYM-FILE]
+fabric-upload-dsym --bundleid=**[YOUR-APP-BUNDLE]** --fabricapikey=**[YOUR-FABRIC-API-KEY]** --file=**[ZIPPED-DSYM-FILE]**
 ```
 
 # Prebuilt
 
-You can find all prebuilt files by OS in "build" folder. With this file you dont need compile.
+You can find all prebuilt files by OS in **"dist"** folder. With this file you dont need compile.
 
 # Build and install
 

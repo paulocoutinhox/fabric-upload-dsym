@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/PuerkitoBio/goquery"
 	"io"
 	"log"
 	"mime/multipart"
@@ -13,8 +12,11 @@ import (
 	"net/http/cookiejar"
 	"os"
 	"path/filepath"
+
+	"github.com/PuerkitoBio/goquery"
 )
 
+// FabricConfigData is a struct to store fabric configuration data fo logged user
 type FabricConfigData struct {
 	DeveloperToken string `json:"developer_token"`
 }
