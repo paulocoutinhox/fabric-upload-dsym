@@ -10,7 +10,9 @@ fabric-upload-dsym --bundleid=**[YOUR-APP-BUNDLE]** --fabricapikey=**[YOUR-FABRI
 
 # Prebuilt
 
-You can find all prebuilt files by OS in **"dist"** folder. With this file you dont need compile.
+You can find all prebuilt files by operacional system inside folder **"dist"**.  
+
+With this file you don't need compile, only download and use binary.  
 
 # Build and install
 
