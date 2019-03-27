@@ -1,12 +1,18 @@
 # Crashlytics from Fabric upload DSYM tool
 
-This is a simple command line tool made with Go that upload any DSYM to **Crashlytics** from **Fabric.io**
+This is a simple command line tool made with Golang that upload any zipped DSYM to **Crashlytics** from **Fabric.io**
 
 # Usage
 
 ```
-fabric-upload-dsym --bundleid=**[YOUR-APP-BUNDLE]** --fabricapikey=**[YOUR-FABRIC-API-KEY]** --file=**[ZIPPED-DSYM-FILE]**
+fabric-upload-dsym --bundleid=[YOUR-APP-BUNDLE] --fabricapikey=[YOUR-FABRIC-API-KEY] --file=[ZIPPED-DSYM-FILE]
 ```
+
+**Replace in command with your info, example:**  
+
+- [YOUR-APP-BUNDLE] = com.prsolucoes.myapp
+- [YOUR-FABRIC-API-KEY] = 12xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxbf
+- [ZIPPED-DSYM-FILE] = /tmp/yourapp/dsym.zip
 
 # Prebuilt
 
